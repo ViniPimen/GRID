@@ -1,0 +1,59 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Racing+Sans+One&display=swap');
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header header"  
+        "nav main aside"
+        "footer footer footer";
+    grid-gap: 20px;
+    height: 100vh;
+}
+
+header {
+    font-family: 'Cinzel', serif;    background-image: url(../Imagens/headerImage.jpg);
+    background:cover;
+    grid-area: header;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns:4fr 4fr;
+    grid-gap: 50px;
+    padding: 10px;
+}
+
+.conteudo {
+    background-color: #e6e0e0;
+    padding: 10px;
+    border: 1px solid #0f0f0f;
+}
+.conteudo2 {
+    background-color: #e6e0e0;
+    padding: 10px;
+    border: 1px solid #0f0f0f;
+}
+.conteudo3{
+    background-color: #e6e0e0;
+    padding: 10px;
+    border: 1px solid #0f0f0f;
+}
+.conteudo4{
+    background-color: #e6e0e0;
+    padding: 10px;
+    border: 1px solid #0f0f0f;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
